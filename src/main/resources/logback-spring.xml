@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- Log message format -->
+        <encoder>
+            <Pattern>
+                %d{yyyy-MMM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{0}.%M - %msg%n
+            </Pattern>
+        </encoder>
+    </appender>
+
+    <!-- local/test profiles -->
+    <springProfile name="default">
+        <logger name="org.springframework" level="info">
+            <appender-ref ref="CONSOLE"/>
+        </logger>
+        <logger name="com.blueharvest.bluedev.bedrocksb" level="debug"
+                additivity="false">
+            <appender-ref ref="CONSOLE"/>
+        </logger>
+    </springProfile>
+
+    <!-- environments profiles -->
+    <springProfile name="dev">
+        <logger name="org.springframework" level="info">
+            <appender-ref ref="CONSOLE"/>
+        </logger>
+        <logger name="com.blueharvest.bluedev.bedrocksb" level="debug"
+                additivity="false">
+            <appender-ref ref="CONSOLE"/>
+        </logger>
+    </springProfile>
+
+    <springProfile name="test">
+        <logger name="org.springframework" level="info">
+            <appender-ref ref="CONSOLE"/>
+        </logger>
+        <logger name="com.blueharvest.bluedev.bedrocksb" level="debug"
+                additivity="false">
+            <appender-ref ref="CONSOLE"/>
+        </logger>
+    </springProfile>
+
+    <springProfile name="acc">
+        <logger name="org.springframework" level="info">
+            <appender-ref ref="CONSOLE"/>
+        </logger>
+        <logger name="com.blueharvest.bluedev.bedrocksb" level="info"
+                additivity="false">
+            <appender-ref ref="CONSOLE"/>
+        </logger>
+    </springProfile>
+
+    <springProfile name="prod">
+        <logger name="org.springframework" level="info">
+            <appender-ref ref="CONSOLE"/>
+        </logger>
+        <logger name="com.blueharvest.bluedev.bedrocksb" level="info"
+                additivity="false">
+            <appender-ref ref="CONSOLE"/>
+        </logger>
+    </springProfile>
+</configuration>
