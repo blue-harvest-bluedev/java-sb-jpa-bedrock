@@ -53,14 +53,14 @@
                 </exclusion>
             </exclusions>
         </dependency>
-		<dependency>
-			<groupId>info.solidsoft.mockito</groupId>
-			<artifactId>mockito-java8</artifactId>
-			<version>${mockito-java8.version}</version>
-			<scope>test</scope>
-		</dependency>
+        <dependency>
+            <groupId>info.solidsoft.mockito</groupId>
+            <artifactId>mockito-java8</artifactId>
+            <version>${mockito-java8.version}</version>
+            <scope>test</scope>
+        </dependency>
 
-	</dependencies>
+    </dependencies>
 
     <build>
         <plugins>
