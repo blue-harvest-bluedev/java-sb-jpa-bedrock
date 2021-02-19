@@ -91,7 +91,7 @@ echo
 
 echo '[INFO] Refactoring the project packages and directories'
 for f in $(find . -type f -name "*.java")
-do 
+do
   replace "com.blueharvest.bluedev.bedrocksb" ${MAIN_PACKAGE_PATH} "$f"
   replace "BedrockSbApplication" ${MAIN_CLASS_NAME} "$f"
 done

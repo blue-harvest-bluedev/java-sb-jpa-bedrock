@@ -7,10 +7,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class BedrockSbApplicationTests {
 
-	@Test
-	@DisplayName("SHOULD run without exceptions WHEN application is started")
-	void main() {
-		BedrockSbApplication.main(new String[]{});
-	}
+    @Test
+    @DisplayName("SHOULD run without exceptions WHEN application is started")
+    void main() {
+        BedrockSbApplication.main(new String[]{});
+    }
 
 }

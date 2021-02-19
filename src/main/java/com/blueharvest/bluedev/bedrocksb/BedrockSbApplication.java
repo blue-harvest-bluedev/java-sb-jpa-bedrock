@@ -9,8 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class BedrockSbApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(BedrockSbApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(BedrockSbApplication.class, args);
+    }
 
 }
