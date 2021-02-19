@@ -10,6 +10,8 @@ After following the guide, the below section ["What is included"](#what-is-inclu
 
 bedrock-sb-java-base: Contains the base dependencies and plugins required to build, test and run the application.
 
+bedrock-sb-java-jpa: Adding dependencies needed to use JPA library.
+
 #### Source code
 
 bedrock-sb-java-base: Contains the main application class.
