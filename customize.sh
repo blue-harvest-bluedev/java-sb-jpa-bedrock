@@ -46,7 +46,7 @@ fi
 echo "Great, you'll rock building ${MAIN_CLASS_NAME}!"
 echo
 
-@echo 'That'"'"'s it! Crazy right? You were in the zone as well!'
+echo 'That'"'"'s it! Crazy right? You were in the zone as well!'
 echo
 
 echo 'Now please give me a few milliseconds to customize your project...'
